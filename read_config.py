@@ -1,3 +1,10 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+'''
+# Created on Feb-24-19 15:14
+# read_config.py
+# @author: Cody Xu
+'''
 from configparser import ConfigParser
 
 def getConfig():
@@ -10,7 +17,6 @@ def getConfig():
     config_data['algorithm'] = algorithm
     config_data['data_category'] = config['RUN']['data_category']
     config_data['outlier'] = config['RUN']['outlier']
-    config_data['error_type'] = config['RUN']['error_type']
     config_data['esp'] = config['INPUT']['esp']
     config_data['numOfEsp'] = config['INPUT']['numOfEsp']
     config_data['numOfUpdateFrequency'] = config['INPUT']['numOfUpdateFrequency']
