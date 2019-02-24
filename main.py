@@ -7,11 +7,9 @@
 '''
 
 import read_config
-import sys
-sys.path.append('./Algorithms')
-import algo_select
+import Algorithms.algo_select
 
 if __name__ == "__main__":
     config = read_config.getConfig()   #get parameters from config.ini
-    algo_select.algo(**config)
+    Algorithms.algo_select.algo(**config)
     
